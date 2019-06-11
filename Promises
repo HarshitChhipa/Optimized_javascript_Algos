@@ -1,0 +1,12 @@
+What is Promises.
+The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. An example can be the following snippet, which after 100ms prints out the result string to the standard output. Also, note the catch, which can be used for error handling. Promises are chainable.
+
+This is how a promise look a like.
+
+new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("result")
+  }, 100)
+})
+  .then(console.log)
+  .catch(console.error)
